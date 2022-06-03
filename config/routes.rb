@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  resources :posts_tags
-  resources :tags
-  resources :comments
-  resources :posts
-  resources :users
+  # resources :posts_tags
+  namespace :api do 
+    namespace :v1 do
+      resources :tags
+      resources :comments
+      resources :posts
+      resources :users
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -20,4 +20,19 @@
     -creating branches use git co -b newBranch
     -switching branches need to use git co branchName
 
-5.
+5. use rails g resource modelName attributes:type --no-test-framework
+    -use resource since not using views
+    -rails db:create
+    -rails db:migrate
+    -rails db:drop if making any changes to schema
+
+6. add associations and validations in models
+    -validates :attribute, presence: true
+
+7.create namespace routes in config/routes if putting controllers in an api/v1 directory
+
+8. add namespace in controllers using API::V1::Controller this is just convention for an api
+
+9.need to uncomment gem 'rack-cors' for cross orign response when making requests and 'bcrypt' for password salting
+
+10. uncomment code in config/intializers/cors.rb and can change origins with * 
