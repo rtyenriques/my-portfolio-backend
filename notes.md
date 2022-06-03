@@ -16,3 +16,8 @@
     -change app to a class from a function
 
 4. setup github and link repos
+    -skip git add README.md
+    -creating branches use git co -b newBranch
+    -switching branches need to use git co branchName
+
+5.
